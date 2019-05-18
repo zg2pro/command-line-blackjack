@@ -1,0 +1,40 @@
+stages:
+- build
+- pages
+build:
+  image: maven:3-jdk-8
+  stage: build
+  script:
+  - mvn clean install
+  artifacts:
+    paths:
+    - target/
+  tags:
+    - docker
+codequality:
+  image: docker:latest
+  stage: build
+  variables:
+    DOCKER_DRIVER: overlay
+  services:
+    - docker:dind
+  script:
+    - docker pull codeclimate/codeclimate
+    - docker run --env CODECLIMATE_CODE="$PWD" --volume "$PWD":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate:0.71.1 analyze -f json > codeclimate.json || true
+  artifacts:
+    paths: [codeclimate.json]
+pages:
+  image: node:latest
+  stage: pages  
+  dependencies: 
+  - build 
+  - codequality
+  script:
+  - mkdir public
+  - npm install -g json
+  - cat codeclimate.json | json > public/codeclimate.json
+  - cp -r target/site/jacoco/* public/
+  - cat public/index.html | sed 's/.*<tfoot>.*ctr2\">\(.*\)%<\/td><td class=\"bar.*<\/tfoot>.*/\1/g' | sed 's/\(.*\)/CODECOV=\1=/g'
+  artifacts:
+    paths:
+    - public
