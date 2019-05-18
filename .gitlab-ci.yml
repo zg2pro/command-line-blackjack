@@ -8,7 +8,7 @@ build:
   - mvn clean install
   artifacts:
     paths:
-    - target/
+    - intuit-blackjack-shell/target/
   tags:
     - docker
 codequality:

@@ -91,3 +91,11 @@ I would usually implement more test basing on jacoco reports, have continuous in
 even for a small project like this one, I often use bettercode and travis. But, as I'm not pushing this code online, 
 and as I'm in hurry to meet the deadlines, I tested only what I needed to debug during my development. At least, I have one 
 spring-boot-test - powered integration test booting the whole context, and unit testing the ascii-art display of the cards.
+
+## Test coverage Report
+
+- [![Java coverage](https://gitlab.com/zg2pro/intuit-blackjack/badges/master/coverage.svg?job=pages)](https://zg2pro.gitlab.io/intuit-blackjack) Java
+
+## Code quality (codeclimate defaults list):
+
+- https://zg2pro.gitlab.io/intuit-blackjack/codeclimate.json
