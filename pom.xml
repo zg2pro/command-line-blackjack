@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.intuit.gregory</groupId>
-    <artifactId>intuit-blackjack</artifactId>
-    <name>intuit-blackjack</name>
+    <groupId>com.command-line.gregory</groupId>
+    <artifactId>command-line-blackjack</artifactId>
+    <name>command-line-blackjack</name>
     <description>an example of blackjack game</description>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <!--url></url-->
     
     <modules>
-        <module>intuit-cards-core</module>
-        <module>intuit-blackjack-core</module>
-        <module>intuit-blackjack-shell</module>
+        <module>command-line-cards-core</module>
+        <module>command-line-blackjack-core</module>
+        <module>command-line-blackjack-shell</module>
     </modules>
 
     <properties>
