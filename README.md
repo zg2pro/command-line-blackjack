@@ -1,6 +1,8 @@
 
 # command-line Blackjack Exercise
 
+[![build status](https://gitlab.com/zg2pro/command-line-blackjack/badges/master/build.svg)](https://gitlab.com/zg2pro/command-line-blackjack/commits/master)
+
 ## Prerequisites
 JDK >= 8 installed - JAVA_HOME - location of a JDK home dir
 
