@@ -8,7 +8,7 @@ build:
   - mvn clean install
   artifacts:
     paths:
-    - intuit-blackjack-shell/target/
+    - command-line-blackjack-shell/target/
   tags:
     - docker
 codequality:
@@ -33,7 +33,7 @@ pages:
   - mkdir public
   - npm install -g json
   - cat codeclimate.json | json > public/codeclimate.json
-  - cp -r intuit-blackjack-shell/target/site/jacoco/* public/
+  - cp -r command-line-blackjack-shell/target/site/jacoco/* public/
   - cat public/index.html | sed 's/.*<tfoot>.*ctr2\">\(.*\)%<\/td><td class=\"bar.*<\/tfoot>.*/\1/g' | sed 's/\(.*\)/CODECOV=\1=/g'
   artifacts:
     paths:
