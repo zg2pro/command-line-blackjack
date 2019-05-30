@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.command-line.gregory</groupId>
+    <groupId>com.github.zg2pro</groupId>
     <artifactId>command-line-blackjack</artifactId>
     <name>command-line-blackjack</name>
     <description>an example of blackjack game</description>
