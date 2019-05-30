@@ -2,7 +2,7 @@ package com.github.zg2pro.command.line.blackjack.core;
 
 import com.github.zg2pro.command.line.blackjack.core.enums.GameResultEnum;
 import com.github.zg2pro.command.line.blackjack.core.exceptions.RedCardException;
-import static com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum.ACE;
+import static com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum.ACE;
 import static com.github.zg2pro.command.line.blackjack.core.enums.GameResultEnum.BLACKJACK;
 import static com.github.zg2pro.command.line.blackjack.core.enums.GameResultEnum.DRAW;
 import static com.github.zg2pro.command.line.blackjack.core.enums.GameResultEnum.INSURANCE_LOST;

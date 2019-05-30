@@ -1,12 +1,12 @@
 package com.github.zg2pro.command.line.blackjack.shell.ascii;
 
-import com.intuit.gregory.intuit.cards.core.Card;
-import com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum;
-import static com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum.JACK;
-import static com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum.KING;
-import static com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum.QUEEN;
-import com.intuit.gregory.intuit.cards.core.enums.ColorsEnum;
-import com.intuit.gregory.intuit.blackjack.core.Hand;
+import com.github.zg2pro.command.line.blackjack.cards.core.Card;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum;
+import static com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum.JACK;
+import static com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum.KING;
+import static com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum.QUEEN;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorsEnum;
+import com.github.zg2pro.command.line.blackjack.core.Hand;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

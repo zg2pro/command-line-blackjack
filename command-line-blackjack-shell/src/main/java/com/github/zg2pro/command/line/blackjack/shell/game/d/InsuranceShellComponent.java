@@ -1,6 +1,6 @@
 package com.github.zg2pro.command.line.blackjack.shell.game.d;
 
-import com.intuit.gregory.intuit.blackjack.core.Player;
+import com.github.zg2pro.command.line.blackjack.core.Player;
 import com.github.zg2pro.command.line.blackjack.shell.game.c.RoundShellComponent;
 import com.github.zg2pro.command.line.blackjack.shell.state.GameContextComponent;
 import javax.inject.Inject;

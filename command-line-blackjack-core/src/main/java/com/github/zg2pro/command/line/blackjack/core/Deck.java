@@ -1,9 +1,9 @@
 package com.github.zg2pro.command.line.blackjack.core;
 
-import com.intuit.gregory.intuit.cards.core.Card;
+import com.github.zg2pro.command.line.blackjack.cards.core.Card;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorsEnum;
 import com.github.zg2pro.command.line.blackjack.core.exceptions.RedCardException;
-import com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum;
-import com.intuit.gregory.intuit.cards.core.enums.ColorsEnum;
 import java.util.ArrayList;
 import java.util.Collections;
 

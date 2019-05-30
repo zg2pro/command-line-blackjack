@@ -1,8 +1,8 @@
 package com.github.zg2pro.command.line.blackjack.shell.game.c;
 
+import com.github.zg2pro.command.line.blackjack.core.Player;
+import com.github.zg2pro.command.line.blackjack.core.exceptions.RedCardException;
 import com.github.zg2pro.command.line.blackjack.shell.game.b.CashInShellComponent;
-import com.intuit.gregory.intuit.blackjack.core.Player;
-import com.intuit.gregory.intuit.blackjack.core.exceptions.RedCardException;
 import static com.github.zg2pro.command.line.blackjack.shell.ShellBoot.ANSI_PURPLE;
 import static com.github.zg2pro.command.line.blackjack.shell.ShellBoot.ANSI_RESET;
 import com.github.zg2pro.command.line.blackjack.shell.ascii.CardPrinter;

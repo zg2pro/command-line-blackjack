@@ -1,6 +1,6 @@
 package com.github.zg2pro.command.line.blackjack.shell.state;
 
-import com.intuit.gregory.intuit.blackjack.core.BlackjackTable;
+import com.github.zg2pro.command.line.blackjack.core.BlackjackTable;
 import org.springframework.stereotype.Component;
 
 /**

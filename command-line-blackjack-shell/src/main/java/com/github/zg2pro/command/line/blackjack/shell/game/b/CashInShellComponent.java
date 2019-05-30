@@ -1,7 +1,7 @@
 package com.github.zg2pro.command.line.blackjack.shell.game.b;
 
+import com.github.zg2pro.command.line.blackjack.core.Player;
 import com.github.zg2pro.command.line.blackjack.shell.game.a.ModesShellComponent;
-import com.intuit.gregory.intuit.blackjack.core.Player;
 import static com.github.zg2pro.command.line.blackjack.shell.ShellBoot.ANSI_PURPLE;
 import static com.github.zg2pro.command.line.blackjack.shell.ShellBoot.ANSI_RESET;
 import com.github.zg2pro.command.line.blackjack.shell.game.c.RoundShellComponent;

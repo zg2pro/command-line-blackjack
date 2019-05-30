@@ -1,10 +1,9 @@
 package com.github.zg2pro.command.line.blackjack.shell.ascii;
 
-import com.github.zg2pro.command.line.blackjack.shell.ascii.CardPrinter;
-import com.intuit.gregory.intuit.cards.core.Card;
-import com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum;
-import com.intuit.gregory.intuit.cards.core.enums.ColorsEnum;
-import com.intuit.gregory.intuit.blackjack.core.Hand;
+import com.github.zg2pro.command.line.blackjack.cards.core.Card;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorsEnum;
+import com.github.zg2pro.command.line.blackjack.core.Hand;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -27,7 +26,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.FileCopyUtils;
 
 @Configuration
-@ComponentScan(basePackages = "com.intuit.gregory.intuit.blackjack.shell.*")
+@ComponentScan(basePackages = "com.github.zg2pro.command.line.blackjack.shell.*")
 class TestBoot implements ApplicationRunner {
 
     @Override
@@ -55,7 +54,7 @@ public class CardPrinterTest {
 
     @Value("classpath:templates/croupierTest.ascii")
     private Resource croupierTestExpectedResult;
-    
+
     private Hand handFactory() {
         Card firstCard = new Card();
         firstCard.setColor(ColorsEnum.CLUBS);

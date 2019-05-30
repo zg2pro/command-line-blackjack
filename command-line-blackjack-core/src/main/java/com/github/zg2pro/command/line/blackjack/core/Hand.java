@@ -1,8 +1,8 @@
 package com.github.zg2pro.command.line.blackjack.core;
 
-import com.intuit.gregory.intuit.cards.core.Card;
-import com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum;
-import static com.intuit.gregory.intuit.cards.core.enums.ColorCardsEnum.TEN;
+import com.github.zg2pro.command.line.blackjack.cards.core.Card;
+import com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum;
+import static com.github.zg2pro.command.line.blackjack.cards.core.enums.ColorCardsEnum.TEN;
 import java.util.ArrayList;
 
 public class Hand extends ArrayList<Card> {
