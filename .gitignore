@@ -3,3 +3,4 @@
 .project
 target/
 /nbactions.xml
+/command-line-blackjack-shell/spring-shell.log

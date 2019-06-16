@@ -22,6 +22,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.shell.standard.commands.Clear;
+import org.springframework.shell.standard.commands.Quit;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.FileCopyUtils;
 
@@ -36,6 +37,11 @@ class TestBoot implements ApplicationRunner {
     @Bean
     public Clear clear() {
         return Mockito.mock(Clear.class);
+    }
+
+    @Bean
+    public Quit quit() {
+        return Mockito.mock(Quit.class);
     }
 
 }

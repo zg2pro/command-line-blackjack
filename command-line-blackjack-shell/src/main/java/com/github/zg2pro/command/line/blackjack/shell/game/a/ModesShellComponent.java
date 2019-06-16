@@ -8,12 +8,31 @@ import com.github.zg2pro.command.line.blackjack.shell.exceptions.UnderConstructi
 import javax.inject.Inject;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
+import org.springframework.shell.standard.ShellOption;
+import org.springframework.shell.standard.commands.Quit;
 
 @ShellComponent
 public class ModesShellComponent {
 
     @Inject
     private GameContextComponent game;
+
+    @Inject
+    private Quit quit;
+
+    @ShellMethod("Continue the game")
+    public String continueTheGame(@ShellOption(defaultValue = "____NULL____") String noPrompt) {
+        if ("____NULL____".equals(noPrompt)) {
+            return "would you like to continue?";
+        } else if ("yes".equals(noPrompt)) {
+            return enter();
+        } else if ("no".equals(noPrompt)) {
+            quit.quit();
+            return "quitting...";
+        } else {
+            throw new IllegalStateException("not a good answer");
+        }
+    }
 
     @ShellMethod("Enter the casino")
     public String enter() {
@@ -26,6 +45,7 @@ public class ModesShellComponent {
     /**
      * the player knowing the command can go directly to the mode selection
      * without typing enter
+     *
      * @return the single mode first operations
      */
     @ShellMethod("Duel the croupier")
@@ -53,8 +73,8 @@ public class ModesShellComponent {
     }
 
     /**
-     * TODO necessary: 
-     * 
+     * TODO necessary:
+     *
      * 1- create an operations enum in blackjack-core
      *
      * 2- method adapted from roundComponent.decisions listing available
@@ -65,7 +85,8 @@ public class ModesShellComponent {
      *
      * 4- add a boolean flag in player to know this player is robot
      *
-     * 5- add a strategy algorithm for the robot player in player class or blackjacktable class
+     * 5- add a strategy algorithm for the robot player in player class or
+     * blackjacktable class
      *
      * @return the robotplayer first operations
      */
